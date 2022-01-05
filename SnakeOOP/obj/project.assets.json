@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\opilane\\source\\repos\\LOGitpe21\\SnakeOOP\\SnakeOOP\\SnakeOOP.csproj",
+      "projectUniqueName": "C:\\Users\\opilane\\source\\repos\\Week19-snakeOOP\\SnakeOOP\\SnakeOOP.csproj",
       "projectName": "SnakeOOP",
-      "projectPath": "C:\\Users\\opilane\\source\\repos\\LOGitpe21\\SnakeOOP\\SnakeOOP\\SnakeOOP.csproj",
+      "projectPath": "C:\\Users\\opilane\\source\\repos\\Week19-snakeOOP\\SnakeOOP\\SnakeOOP.csproj",
       "packagesPath": "C:\\Users\\opilane\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\opilane\\source\\repos\\LOGitpe21\\SnakeOOP\\SnakeOOP\\obj\\",
+      "outputPath": "C:\\Users\\opilane\\source\\repos\\Week19-snakeOOP\\SnakeOOP\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",

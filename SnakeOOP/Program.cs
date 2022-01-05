@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading;
 
 namespace SnakeOOP
@@ -9,7 +10,7 @@ namespace SnakeOOP
         static void Main(string[] args)
         {
             int score = 0;
-            //drawing a game field frame
+            
             Walls walls = new Walls(80, 25);
             walls.Draw();
 
@@ -20,7 +21,7 @@ namespace SnakeOOP
             FoodGenerator foodGenerator = new FoodGenerator(80, 25, '1');
             Point food = foodGenerator.GenerateFood();
             food.Draw();
-
+            Console.ForegroundColor = ConsoleColor.Yellow;
             while (true)
             {
                 if (walls.IsHit(snake) || snake.IsHitTail())
@@ -50,7 +51,10 @@ namespace SnakeOOP
             string str_score = Convert.ToString(score);
             WriteGameOver(str_score);
             Console.ReadLine();
+
+            
         }
+       
 
         public static void WriteGameOver(string score)
         {
@@ -59,9 +63,9 @@ namespace SnakeOOP
             Console.ForegroundColor = ConsoleColor.Red;
             Console.SetCursorPosition(xOffset, yOffset++);
             WriteText("========================", xOffset, yOffset++);
-            WriteText("        GAME OVER       ", xOffset + 1, yOffset++);
+            WriteText("       Mäng Läbi :)       ", xOffset + 1, yOffset++);
             yOffset++;
-            WriteText($" You Scored {score} points", xOffset + 2, yOffset++);
+            WriteText($" Sinu skoor: {score} punkti", xOffset + 2, yOffset++);
             WriteText("", xOffset + 1, yOffset++);
             WriteText("=========================", xOffset, yOffset++);
         }
