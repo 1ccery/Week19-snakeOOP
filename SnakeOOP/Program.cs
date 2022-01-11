@@ -18,6 +18,10 @@ namespace SnakeOOP
             Snake snake = new Snake(snakeTail, 5, Direction.RIGHT);
             snake.Draw();
 
+            FoodGenerator foodGenerator2 = new FoodGenerator(80, 25, '/');
+            Point food2 = foodGenerator2.GenerateFood();
+            food2.Draw();
+
             FoodGenerator foodGenerator = new FoodGenerator(80, 25, '1');
             Point food = foodGenerator.GenerateFood();
             food.Draw();
@@ -34,6 +38,14 @@ namespace SnakeOOP
                     food = foodGenerator.GenerateFood();
                     food.Draw();
                     score++;
+                    Console.Beep();
+                }
+                if (snake.Eat(food2))
+                {
+                    food = foodGenerator.GenerateFood();
+                    food.Draw();
+                    score--;
+                    Console.ForegroundColor = ConsoleColor.Cyan;
                 }
                 else
                 {
